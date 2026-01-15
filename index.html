@@ -1,0 +1,56 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Log In</title>
+<link rel="stylesheet" href="style-rename.css"/>
+<script src="js/login.js"></script>
+</head>
+<body>
+<div class="card">
+    <div class="logo">🦑</div>
+     <h1>Login</h1>
+
+ <label>
+      Email
+      <input type="email" placeholder="you@example.com" />
+    </label>
+
+    <label>
+      Password
+      <input type="password" placeholder="••••••••" />
+    </label>
+ 
+    <button id="loginButton" class="primary";>
+    Log in
+    </button>
+
+</body>
+</html>
+
+<head>
+    <head>
+    <script>
+       document.addEventListener("DOMContentLoaded", () => {
+    const loginButton = document.getElementById('loginButton');
+
+    const moveButton = () => {
+        const newX = Math.random() * (window.innerWidth - loginButton.offsetWidth);
+        const newY = Math.random() * (window.innerHeight - loginButton.offsetHeight);
+        loginButton.style.left = `${newX}px`;
+        loginButton.style.top = `${newY}px`;
+    };
+
+    loginButton.addEventListener('mouseenter', moveButton);
+
+    loginButton.addEventListener('click', () => {
+        alert('You caught the login button!');
+    });
+});
+
+
+
+    </script>
+</head>

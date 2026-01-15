@@ -1,0 +1,101 @@
+{
+box-sizing: border-box;
+font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f6f8;
+}
+
+.card {
+    position: relative;
+    top: 25%;
+    left: 25%;
+    width: 100%;
+    max-width: 380px;
+    background: white;
+    padding: 54px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.logo {
+  font-size: 40px;
+  color: #e11d48;
+  margin-bottom: 12px;
+}
+
+h1 {
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 2px rgba(96,165,250,.25);
+}
+
+button {
+  width: 80%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: left 1.2s ease, top 1.2s ease;
+  transition-delay: .1s
+}
+
+#loginButton {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.primary {
+  background: #e11d48;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.primary:hover {
+  background: #be123c;
+}
+
+#hoverZone {
+    width: 200px;   /* bigger than the button */
+    height: 200px;
+    position: absolute;
+}
+#evadeButton {
+    position: absolute;
+    left: 460px;
+    top: 8px;
+    transition: left 1.2s ease, top 1.2s ease;
+    transition-delay: .1s
+}
+
