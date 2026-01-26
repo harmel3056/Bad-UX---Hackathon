@@ -1,6 +1,8 @@
-{
-box-sizing: border-box;
-font-family: system-ui, -apple-system, sans-serif;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, sans-serif;
 }
 
 body {
@@ -14,12 +16,10 @@ body {
 
 .card {
     position: relative;
-    top: 25%;
-    left: 25%;
-    width: 100%;
     max-width: 380px;
+    margin: auto;
     background: white;
-    padding: 54px;
+    padding: 50px 50px 95px; /* vertical, horizintal, bottom */
     border-radius: 14px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     text-align: center;
@@ -29,6 +29,12 @@ body {
   font-size: 40px;
   color: #e11d48;
   margin-bottom: 12px;
+}
+
+.form {
+  text-align: left;
+  margin: 0 auto;
+  width: 100%;
 }
 
 h1 {
@@ -60,7 +66,7 @@ input:focus {
 }
 
 button {
-  width: 80%;
+  width: 22%;
   padding: 12px;
   border-radius: 8px;
   border: none;
@@ -72,8 +78,12 @@ button {
 
 #loginButton {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 62%;
+  width: 80%;
+  max-width: 271px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
 }
 
 .primary {
