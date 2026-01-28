@@ -5,36 +5,33 @@
 <head>
 <meta charset="UTF-8" />
 <title>Log In</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="style.css"/>
 <script src="js/login.js"></script>
 </head>
 <body>
 <div class="card">
-    <div class="logo">🦑</div>
+    <div class="logo">🧭</div>
      <h1>Login</h1>
 
     <div class="form">
-        <label>
-            Career Type
-            <input type="email" placeholder="Tell us your dream" />
-        </label>
+        <div class="input-container">
+            <i class="fas fa-envelope icon"></i>
+            <input type="email" placeholder="Email">
+        </div>
 
-        <label>
-            Password
-            <input type="password" placeholder="••••••••" />
-        </label>
+        <div class="input-container">
+            <i class="fa fa-lock icon"></i>
+            <input type="password" placeholder="Password">
+        </div>
+
     </div>
 </div>
 <button id="loginButton" class="primary";>
 Log in
 </button>
 
-</body>
-</html>
-
-<head>
-    <head>
-    <script>
+<script>
        document.addEventListener("DOMContentLoaded", () => {
     const loginButton = document.getElementById('loginButton');
 
@@ -48,11 +45,12 @@ Log in
     loginButton.addEventListener('mouseenter', moveButton);
 
     loginButton.addEventListener('click', () => {
-        alert('You caught the login button!');
+        alert('You made it. Welcome to the next chapter.');
     });
 });
+</script>
 
-
-
-    </script>
+</body>
+</html>
+    
 </head>
